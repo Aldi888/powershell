@@ -1,0 +1,10 @@
+# Get all scheduled tasks
+$tasks = Get-ScheduledTask
+
+# Select the task name and status
+$taskInfo = $tasks | Select-Object -Property TaskName, State
+
+# Display the task information
+$taskInfo
+# Export the task information to a CSV file
+$taskInfo | Export-Csv -Path "C:\temp\ScheduledTasks.csv" -NoTypeInformation
