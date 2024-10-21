@@ -1,0 +1,14 @@
+Type 'tzutil /l' to see a list of all time zones. Once you find your time zone, copy the description that is on the second line.
+
+Example: 
+
+(UTC-06:00) Central Time (US & Canada)
+Central Standard Time   <---- copy
+
+Afterwards, type 'tzutil /s "(paste the time zone here)" '
+
+Like this:
+
+tzutil /s "Central Standard Time"     (make sure to include the quotations!) then ENTER.
+
+Exit the Command Prompt, go to your time settings, and it should be correct!
